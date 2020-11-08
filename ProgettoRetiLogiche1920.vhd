@@ -4,7 +4,6 @@
 -- 
 -- Create Date: 26.02.2020 10:56:23
 -- Design Name: 
--- Module Name: 10615045 - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -66,11 +65,11 @@ architecture behavioral of project_reti_logiche is
     variable indirizzoDaValutare:std_logic_vector(15 downto 0):=std_logic_vector(to_unsigned(8,16));--indirizzo di RAM(8)
     variable indirizzoScrittura:std_logic_vector(15 downto 0):=std_logic_vector(to_unsigned(9,16));--indirizzo di RAM(9)
     variable indirizzoWZLetta:std_logic_vector(15 downto 0);--contiene l'indirizzo della cella di memoria appena letta
-    variable valoreDaValutare:integer range 0 to 127;--conterr‡ il valore di RAM(8)
-    variable valoreLetto:integer range 0 to 127;--conterr‡ il valore estratto dalla memoria
-    variable valoreDaScrivere:integer range 0 to 127; --conterr‡ il valore da scrivere in RAM(9)
-    variable wzDaEsaminare:integer; --Ë "l'indice" della WZ da esaminare 
-    variable wzOffset:std_logic_vector(3 downto 0):="0000";--conterr‡ WZ_OFFSET 
+    variable valoreDaValutare:integer range 0 to 127;--conterr√† il valore di RAM(8)
+    variable valoreLetto:integer range 0 to 127;--conterr√† il valore estratto dalla memoria
+    variable valoreDaScrivere:integer range 0 to 127; --conterr√† il valore da scrivere in RAM(9)
+    variable wzDaEsaminare:integer; --√® "l'indice" della WZ da esaminare 
+    variable wzOffset:std_logic_vector(3 downto 0):="0000";--conterr√† WZ_OFFSET 
     
     begin
     
